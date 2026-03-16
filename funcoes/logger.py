@@ -1,7 +1,13 @@
 import logging
 import os
+import sys
 
-_LOG_DIR = "logs"
+# Resolve o diretório base: pasta do .exe (PyInstaller frozen) ou do script
+if getattr(sys, "frozen", False):
+    _BASE_DIR = os.path.dirname(sys.executable)
+else:
+    _BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+_LOG_DIR = os.path.join(_BASE_DIR, "logs")
 _LOG_FILE = os.path.join(_LOG_DIR, "migracao.log")
 
 os.makedirs(_LOG_DIR, exist_ok=True)

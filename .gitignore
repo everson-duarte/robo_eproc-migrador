@@ -32,3 +32,6 @@ desktop.ini
 # Planilhas com dados sensíveis (remova esta linha se quiser versionar exemplos)
 *.xlsx
 *.xls
+
+# Claude Code
+.claude/

@@ -20,6 +20,7 @@ class UILogHandler(logging.Handler):
         "❌ Erros de validação",
         "Código identificado:",
         "❌ TIMEOUT",
+        "❌ ERRO:",
         "❌ Falha na recuperação",
         "⚠️ Execução cancelada",
         "⚠️ EXECUÇÃO INTERROMPIDA",

@@ -426,7 +426,7 @@ def migrador():
             elemento.click()
             logger.info("Elemento 'atalhoRapido_2' clicado com sucesso.")
         except Exception as e:
-            logger.info(f"Erro ao tentar clicar em 'atalhoRapido_2': {e}")
+            logger.error(f"❌ ERRO: Atalho de migração não encontrado no e-Proc. Verifique se está na página correta. ({e})")
             wb.close()
             return
         
@@ -846,7 +846,7 @@ def migrador_sem_cpf():
             elemento.click()
             logger.info("Elemento 'atalhoRapido_2' clicado com sucesso.")
         except Exception as e:
-            logger.info(f"Erro ao tentar clicar em 'atalhoRapido_2': {e}")
+            logger.error(f"❌ ERRO: Atalho de migração não encontrado no e-Proc. Verifique se está na página correta. ({e})")
             wb.close()
             return
         
